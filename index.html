@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Login </title>
+<link href="ejemplo.min.css" rel="stylesheet" type="text/css">
+<link href="jquery.mobile.structure-1.1.0.min.css" rel="stylesheet" type="text/css"><script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="jquery.mobile-1.1.0.min.js"></script>
+
+
+<style type="text/css">
+.Emcbezado {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	background-color: #FDE7C6;
+	height: 50px;
+	margin: 0px;
+	border: thin solid  #FDE7C6;
+}
+.Marco {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	background-color: #FDE7C6;
+	height: 50px;
+	margin: 0px;
+	border: thin solid  #FDE7C6;
+}
+.Marco2 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	background-color:  #FDE7C6;
+	height: 50px;
+	margin: 0px;
+	border: thin solid  #FDE7C6;
+}
+.Emcbezado1 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	background-color:  #FDE7C6;
+	height: 50px;
+	margin: 0px;
+	border: thin solid  #006;
+}
+.Marco3 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	background-color:  #FDE7C6;
+	height: 50px;
+	margin: 0px;
+	border: thin solid  #006;
+}
+.Marco4 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	background-color:  #FDE7C6;
+	height: 50px;
+	margin: 0px;
+	border: thin solid  #006;
+}
+.Emcbezado2 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	background-color: #FDE7C6;
+	height: 50px;
+	margin: 0px;
+	border: thin solid #006;
+}
+.Marco5 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	background-color: #FDE7C6;
+	height: 50px;
+	margin: 0px;
+	border: thin solid #006;
+}
+.Marco6 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	background-color: #FDE7C6;
+	height: 50px;
+	margin: 0px;
+	border: thin solid #006;
+}
+.Emcbezado3 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	background-color: #FDE7C6;
+	height: 50px;
+	margin: 0px;
+	border: thin solid #006;
+}
+.Marco7 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	background-color: #FDE7C6;
+	height: 50px;
+	margin: 0px;
+	border: thin solid #006;
+}
+.Marco8 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	background-color: #FDE7C6;
+	height: 50px;
+	margin: 0px;
+	border: thin solid #006;
+}
+</style>
+
+<script type="text/javascript">
+function ValidaNumero(){ 
+
+   var x=document.forms["form1"]["Usuario"].value;
+   var y=document.forms["form1"]["Pass"].value;
+   if (x==null || x=="")
+   {
+   alert("Ingrese el usuario");
+   return false;
+   }
+   
+   if (x==null || x=="")
+   if (y==null || y=="")
+   {
+   alert("Ingrese la contrasena");
+   return false;
+   }
+   
+   if ( y=="0923025613")
+   if ( x=="michelle.ortega")
+   {
+      alert("Bienvenid@ Michelle Ortega");
+	  window.location.href="aplicacion1.html";
+	  return false;
+   }
+   
+    if ( y=="0923718118")
+	if ( x=="irene.serrano")
+   {
+      alert("Bienvenid@ Irene Serrano");
+	  window.location.href="aplicacion.html";
+	  return false;
+   }
+   
+   alert("No se encuentra registrado el usuario");
+ 
+ }
+
+</script>
+</head>
+
+<body>
+	<div data-role="page" data-theme="a" data-fullscreen="true" id="ini">
+        <div data-role="header" data-position="fixed" data-id="piel">
+        	<h1>LOGIN</h1>
+                
+      
+        </div>
+		<div data-role="content">
+        	<br>
+           
+		  <h3 align="center"></h3>
+          <center><br>
+            <img src="images/catol.png" alt="Logo Institucional" width="267" height="148">
+          </center></br></a>
+          </p>
+            <form name="form1" method="post" action="">
+              <label for="Usuario">Usuario</label>
+              <input type="text" name="Usuario" id="Usuario"><br />
+               <label for="Password">Contrase&ntilde;a</label>
+              <input type="password" name="Pass" id="Pass">
+              <input name="Ingresar" type="button" onClick="ValidaNumero();" value="Ingresar" >
+            </form>
+            
+        </div>
+   
+   
+    </div>
+</body>
+</html>
